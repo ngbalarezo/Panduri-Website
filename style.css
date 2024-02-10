@@ -22,13 +22,18 @@ body{
   height: 256px;
   width: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   margin-top: var(--standard-div-margin);
   margin-left: var(--standard-div-margin);
   margin-right: var(--standard-div-margin);
   margin-bottom: var(--standard-div-margin);
+}
+
+.header-title{
+  color: white;
+  font-size: 5rem;
 }
 
 .nav{
@@ -78,7 +83,6 @@ body{
   margin-left: var(--standard-div-margin);
   margin-right: var(--standard-div-margin);
   margin-bottom: var(--standard-div-margin);
-
 }
 
 #sidenav a{
