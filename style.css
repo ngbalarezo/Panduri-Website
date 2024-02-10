@@ -1,16 +1,14 @@
 
 body{
-  background-color: burlywood;
-}
-
-#root{
-  
+  background-image: url(images/leaf-1482948_1280.jpg);
+  --wrapper-bg-color: bisque;
+  --standard-div-margin: 10px;
 }
 
 .page-wrapper{
-  background-color: bisque;
+  background-color: var(--wrapper-bg-color);
   border: 3px solid saddlebrown;
-  width: 1440px;
+  width: 1360px;
   height: fit-content;
   display: flex;
   align-items: space-evenly;
@@ -27,70 +25,94 @@ body{
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-top: var(--standard-div-margin);
+  margin-left: var(--standard-div-margin);
+  margin-right: var(--standard-div-margin);
+  margin-bottom: var(--standard-div-margin);
 }
 
-.topnav{
-  background-color: sienna;
+.nav{
+  --nav-bg-color: sienna;
+}
+
+#topnav{
+  background-color: var(--nav-bg-color);
   height: fit-content;
   width: auto;
   margin-top: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: var(--standard-div-margin);
+  margin-right: var(--standard-div-margin);
   margin-bottom: 0px;
 }
 
-.topnav a{
+#topnav a{
   float: left;
   color: white;
-  text-align: center;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav a:hover{
-  background-color: #ddd;
+#topnav a:hover, #sidenav a:hover{
+  background-color:rgb(255, 219, 203);
   color: black;
 }
 
 .main-wrapper{
-  background-color: bisque;
+  background-color: var(--wrapper-bg-color);
   height: fit-content;
   width: 1360px;
   display: flex;
   justify-content: flex-start;
 }
 
-.sidenav{
-  background-color: sienna;
-  height: 1000px;
-  width: 144px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+#sidenav{
+  background-color: var(--nav-bg-color);
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: var(--standard-div-margin);
+  margin-left: var(--standard-div-margin);
+  margin-right: var(--standard-div-margin);
+  margin-bottom: var(--standard-div-margin);
 
+}
+
+#sidenav a{
+  float: inline-start;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 #content{
   background-color: blanchedalmond;
   height: fit-content;
   width: 1216px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-top: var(--standard-div-margin);
+  margin-left: var(--standard-div-margin);
+  margin-right: var(--standard-div-margin);
+  margin-bottom: var(--standard-div-margin);
 }
 
 .section-content{
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-top: var(--standard-div-margin);
+  margin-left: var(--standard-div-margin);
+  margin-right: var(--standard-div-margin);
+  margin-bottom: var(--standard-div-margin);
+}
+
+h{
+
+}
+
+p{
+  !FIXME: left off here
 }
 
 #video-display{
