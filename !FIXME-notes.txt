@@ -1,0 +1,20 @@
+- Download images, change links to files
+- Add footer
+- Add lessons links
+- Change out lessons for resources page
+    - Learning resources
+        - https://www.youtube.com/c/LearnToPlayPanduri
+        - https://www.youtube.com/watch?v=hkbqZXDxrP8
+        - https://www.youtube.com/watch?v=46eHUYQfmTU
+        - https://www.youtube.com/watch?v=N-FWp6F6G2A
+        - https://www.youtube.com/watch?v=wf89Rb6EExo
+        - 
+    - Purchasing resources
+    - References
+    - Travel resources?
+
+-USE LATER?
+    background: sienna;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
