@@ -8,54 +8,64 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
-    <div class="wrapper">
-      <div class="top-bar">
-        <i class="material-icons">expand_more</i>
-        <span>Now Playing</span>
-        <i class="material-icons">more_horiz</i>
-      </div>
-      <div class="img-area">
-        <img src="music-player/images/panduri-cover-art1.webp" alt="">
-      </div>
-      <div class="song-details">
-        <p class="name">Panduri</p>
-        <p class="artist">Fatih Yasar</p>
-      </div>
-      <div class="progress-area">
-        <div class="progress-bar">
-        </div>
-        <div class="timer">
-          <span class="current">0:20</span>
-          <span class="current">3:40</span>
-        </div>
-      </div>
-      <div class="controls">
-        <i id="repeat-playlist" class="material-icons">repeat</i>
-        <i id="prev" class="material-icons">skip_previous</i>
-        <div class="play-pause">
-          <i class="material-icons">play_arrow</i>
-        </div>
-        <i id="next" class="material-icons">skip_next</i>
-        <i id="more-music" class="material-icons">queue_music</i>
-      </div>
-      <div class="music-list">
-        <div class="header">
-          <div class="row">
-            <i class="material-icons">queue_music</i>
-            <span>Music List</span>
+    <nav id="topnav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="purchase.html">Purchase</a>
+      <a href="lessons.html">Learn to Play</a>
+      <a href="music-player.html">Music Player</a>
+      <a href="references.html">References</a>
+    </nav>
+    <div class="page-wrapper">
+      <div class="music-player-wrapper">
+        <div class="wrapper">
+          <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons">more_horiz</i>
           </div>
-          <i id="close" class="material-icons">close</i>
-        </div>
-        <ul>
-          <li>
-            <div class="row">
-              <span>Mitsem Souri - N. Nadirachvili</span>
-              <p>Audio Library</p>
+          <div class="img-area">
+            <img src="" alt="">
+          </div>
+          <div class="song-details">
+            <p class="name">Panduri</p>
+            <p class="artist">Fatih Yasar</p>
+          </div>
+          <div class="progress-area">
+            <div class="progress-bar">
             </div>
-            <span class="audio-duration">0:30</span>
-          </li>
-        </ul>
+            <div class="timer">
+              <span class="current">0:00</span>
+              <span class="duration"></span>
+            </div>
+            <audio id="main-audio" src=""></audio>
+          </div>
+          <div class="controls">
+            <i id="repeat-playlist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <div class="play-pause">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="more-music" class="material-icons">queue_music</i>
+          </div>
+          <div class="music-list">
+            <div class="header">
+              <div class="row">
+                <i class="material-icons">queue_music</i>
+                <span>Music List</span>
+              </div>
+              <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+              
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+    
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+
   </body>
 </html>

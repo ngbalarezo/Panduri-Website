@@ -6,7 +6,7 @@ body{
 }
 
 .page-wrapper{
-  background-image: url(images/texture-stone-ground-rock.jpg);
+  background-image: url(images/cobble-rock.jpg);
   border: 3px solid saddlebrown;
   width: 1250px;
   height: fit-content;

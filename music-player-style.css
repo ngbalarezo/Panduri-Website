@@ -16,18 +16,62 @@
   --black: black;
 }
 body{
+  background-image: url(images/leaf-1482948_1280.jpg);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   min-height: 100vh;
+}
+/*INSERT NAV*/
+.page-wrapper{
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+.nav{
+  --nav-bg-color: sienna;
+}
+#topnav{
+  background-color: var(--nav-bg-color);
+  height: fit-content;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: var(--standard-div-margin);
+  margin-right: var(--standard-div-margin);
+  margin-bottom: 12px;
+}
+#topnav a{
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+#topnav a:hover, #sidenav a:hover{
+  background-color:rgb(255, 219, 203);
+  color: black;
+}
+.music-player-wrapper{
+  background-image: url(images/cobble-rock.jpg);
+  padding: 40px 40px 40px 40px;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px var(--black);
 }
 .wrapper{
   width: 380px;
+  overflow: hidden;
   position: relative;
   border-radius: 15px;
   padding: 25px 30px;
   background: var(--bisque);
-  box-shadow: 0px 6px 15px var(--lightbrownshadow);
+  box-shadow: 0px 6px 15px var(--black);
 }
 .wrapper i{
   cursor: pointer;
@@ -78,7 +122,7 @@ body{
 }
 .progress-area .progress-bar{
   height: inherit;
-  width: 50%;
+  width: 0%;
   position: relative;
   background: sienna;
   border-radius: inherit;
@@ -158,13 +202,67 @@ body{
 .music-list{
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -55%;
+  opacity: 0;
+  pointer-events: none;
   width: 100%;
+  padding: 15px 30px;
   border-radius: 15px;
   background: var(--bisque);
   box-shadow: 0px -5px 10px var(--lightbrownshadow);
+  transition: all 0.14s ease-out;
+}
+/*Show class to be used in javascript*/
+.music-list.show{
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
 }
 .music-list .header .row{
   display: flex;
   align-items: center;
+  font-size: 19px;
+  color: var(--black);
+}
+.header .row i{
+  cursor: default;
+}
+.header .row span{
+  margin-left: 5px;
+}
+.header #close{
+  font-size: 22px;
+  color: var(--black);
+}
+.music-list ul{
+  margin: 10px 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.music-list ul::-webkit-scrollbar{
+  width: 0px;
+}
+.music-list ul li{
+  cursor: pointer;
+  list-style: none;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  color: var(--black);
+  border-bottom: 1px solid bisque;
+}
+.music-list ul li:last-child{
+  border-bottom: 0px;
+}
+.music-list ul li .row span{
+  font-size: 17px;
+}
+ul li .row p{
+  opacity: 0.9;
+}
+ul li .audio-duration{
+  font-size: 16px;
+}
+ul li.playing{
+  color: var(--lightbrownshadow);
+  pointer-events: none;
 }
