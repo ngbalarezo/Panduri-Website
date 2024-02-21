@@ -1,10 +1,8 @@
-
 body{
   background-image: url(images/leaf-1482948_1280.jpg);
   --wrapper-bg-color: bisque;
   --standard-div-margin: 10px;
 }
-
 .page-wrapper{
   background-image: url(images/cobble-rock.jpg);
   border: 3px solid saddlebrown;
@@ -16,7 +14,6 @@ body{
   margin-left: 0 auto;
   margin-right: 0 auto;
 }
-
 .top-header{
   background-color:saddlebrown;
   height: 256px;
@@ -30,16 +27,13 @@ body{
   margin-right: var(--standard-div-margin);
   margin-bottom: var(--standard-div-margin);
 }
-
 .header-title{
   color: white;
   font-size: 5rem;
 }
-
 .nav{
   --nav-bg-color: sienna;
 }
-
 #topnav{
   background-color: var(--nav-bg-color);
   height: fit-content;
@@ -49,7 +43,6 @@ body{
   margin-right: var(--standard-div-margin);
   margin-bottom: 12px;
 }
-
 #topnav a{
   float: left;
   color: white;
@@ -58,12 +51,10 @@ body{
   text-decoration: none;
   font-size: 17px;
 }
-
 #topnav a:hover, #sidenav a:hover{
   background-color:rgb(255, 219, 203);
   color: black;
 }
-
 .main-wrapper{
   background-image: url(images/cobble-rock.jpg);
   height: fit-content;
@@ -71,7 +62,6 @@ body{
   display: flex;
   justify-content: flex-start;
 }
-
 #sidenav{
   background-color: var(--nav-bg-color);
   height: fit-content;
@@ -84,7 +74,6 @@ body{
   margin-right: var(--standard-div-margin);
   margin-bottom: var(--standard-div-margin);
 }
-
 #sidenav a{
   float: inline-start;
   color: white;
@@ -93,7 +82,6 @@ body{
   text-decoration: none;
   font-size: 17px;
 }
-
 #content{
   background-color: var(--wrapper-bg-color);
   height: fit-content;
@@ -103,41 +91,51 @@ body{
   margin-right: var(--standard-div-margin);
   margin-bottom: var(--standard-div-margin);
 }
-
 .section-content{
   margin-top: var(--standard-div-margin);
   margin-left: var(--standard-div-margin);
   margin-right: var(--standard-div-margin);
   margin-bottom: var(--standard-div-margin);
 }
-
 h1{
   font-size: 40px;
 }
-
 h2{
   font-size: 30px;
 }
-
-img{
+.left-side-img{
   float: left;
   margin: 10px;
-
 }
-
+.right-side-img{
+  float: right;
+  margin: 10px;
+}
 p{
   font-size: 20px;
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
-
 }
-
 #video-display{
   height: fit-content;
   width: 900px;
   display: flex;
   justify-content: space-between;
+  margin: 10px 10px 10px 40px;
 }
-
+#img-display{
+  height: fit-content;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-side-video{
+  float: inline-start;
+  margin: 10px;
+}
+.right-side-video{
+  float: inline-end;
+  margin: 10px;
+}
 
