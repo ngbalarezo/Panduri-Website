@@ -1,3 +1,3 @@
-Nicholas Balarezo
+# Panduris: Web Dev Website
 
-My website on the Georgian folk instrument panduri.
+My website is on the Georgian folk instrument panduri.
